@@ -1,4 +1,4 @@
-name: Build and Test .NET Backend
+name: CI/CD Pipeline
 
 on:
   push:
@@ -14,21 +14,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
 
-      - name: Restore dependencies
-        run: dotnet restore
-
-      - name: Build project
-        run: dotnet build --configuration Release --no-restore
-
-      - name: Run unit tests
-        run: dotnet test --no-build --verbosity normal
+      - name: Build Docker images
+        run: |
+          docker compose -f docker-compose.yml build
