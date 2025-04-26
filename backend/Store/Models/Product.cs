@@ -22,6 +22,5 @@
             this.quantity = quantity;
             this.description = description;
         }
-        jqk;
     }
 }
