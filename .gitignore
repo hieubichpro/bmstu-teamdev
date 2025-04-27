@@ -27,6 +27,7 @@ bld/
 
 # Visual Studio Code settings
 .vscode/
+.vs/
 
 # Windows image file caches
 Thumbs.db
