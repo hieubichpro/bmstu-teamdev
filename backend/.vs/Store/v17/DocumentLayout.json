@@ -34,8 +34,7 @@
               "RelativeToolTip": "Store\\BL\\ItemOrderService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T12:03:01.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T12:03:01.943Z"
             },
             {
               "$type": "Document",
@@ -47,8 +46,7 @@
               "RelativeToolTip": "Store\\Interfaces\\IItemOrderRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T12:02:21.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T12:02:21.165Z"
             },
             {
               "$type": "Document",
@@ -58,7 +56,7 @@
               "RelativeDocumentMoniker": "Store\\Models\\ItemOrder.cs",
               "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Models\\ItemOrder.cs",
               "RelativeToolTip": "Store\\Models\\ItemOrder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T12:01:21.21Z",
               "EditorCaption": ""
