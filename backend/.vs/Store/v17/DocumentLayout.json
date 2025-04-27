@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\data\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\data\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\data\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\data\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,50 +78,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Store\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\WeatherForecast.cs",
+              "RelativeToolTip": "Store\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:22:01.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Store\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Models\\User.cs",
+              "RelativeToolTip": "Store\\Models\\User.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:17:37.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Store\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Store\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:09:31.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Program.cs",
+              "RelativeDocumentMoniker": "Store\\Program.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Program.cs",
+              "RelativeToolTip": "Store\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:07:15.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\appsettings.json",
               "RelativeDocumentMoniker": "Store\\appsettings.json",
               "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\appsettings.json",
               "RelativeToolTip": "Store\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-27T13:32:16.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ItemOrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\ItemOrderRepository.cs",
-              "RelativeDocumentMoniker": "Store\\Repository\\ItemOrderRepository.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\ItemOrderRepository.cs",
-              "RelativeToolTip": "Store\\Repository\\ItemOrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:18:33.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Store\\Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "Store\\Repository\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T12:58:14.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\OrderRepository.cs",
               "RelativeDocumentMoniker": "Store\\Repository\\OrderRepository.cs",
@@ -118,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\ProductRepository.cs",
               "RelativeDocumentMoniker": "Store\\Repository\\ProductRepository.cs",
@@ -144,7 +186,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Data\\DbContextFactory.cs",
+              "RelativeDocumentMoniker": "Store\\Data\\DbContextFactory.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Data\\DbContextFactory.cs",
+              "RelativeToolTip": "Store\\Data\\DbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T13:04:34.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Store\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Store\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:58:14.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ItemOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\ItemOrderRepository.cs",
+              "RelativeDocumentMoniker": "Store\\Repository\\ItemOrderRepository.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\ItemOrderRepository.cs",
+              "RelativeToolTip": "Store\\Repository\\ItemOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T13:18:33.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ItemCartRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\ItemCartRepository.cs",
               "RelativeDocumentMoniker": "Store\\Repository\\ItemCartRepository.cs",
@@ -157,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "CartRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Repository\\CartRepository.cs",
               "RelativeDocumentMoniker": "Store\\Repository\\CartRepository.cs",
@@ -170,21 +251,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Data\\DbContextFactory.cs",
-              "RelativeDocumentMoniker": "Store\\Data\\DbContextFactory.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Data\\DbContextFactory.cs",
-              "RelativeToolTip": "Store\\Data\\DbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:04:34.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Store",
+              "DocumentIndex": 13,
+              "Title": "Store.csproj",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Store.csproj",
               "RelativeDocumentMoniker": "Store\\Store.csproj",
               "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Store.csproj",
@@ -196,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ItemCartService.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\BL\\ItemCartService.cs",
               "RelativeDocumentMoniker": "Store\\BL\\ItemCartService.cs",
@@ -209,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "IItemCartRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Interfaces\\IItemCartRepository.cs",
               "RelativeDocumentMoniker": "Store\\Interfaces\\IItemCartRepository.cs",
@@ -222,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ItemCart.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Models\\ItemCart.cs",
               "RelativeDocumentMoniker": "Store\\Models\\ItemCart.cs",
