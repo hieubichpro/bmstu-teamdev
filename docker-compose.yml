@@ -6,3 +6,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8081:80"
+
+  frontend:
+    container_name: front-end
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
