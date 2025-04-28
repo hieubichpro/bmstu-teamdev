@@ -1,0 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { AdminUser } from "./components/pages/AdminUser";
+
+export default function App() {
+  console.log("hello world");
+  
+  return (
+    <BrowserRouter>
+        <h1 className="h-screen flex w-full items-center bg-[#F6ECE7] justify-center">
+          <Routes>
+            <Route path="/admin/users" element={<AdminUser />} />
+          </Routes>
+        </h1>
+    </BrowserRouter>
+  )
+}
