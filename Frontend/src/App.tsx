@@ -3,6 +3,7 @@ import { UserInfo } from "./components/pages/UserInfo";
 import { AdminUser } from "./components/pages/AdminUser";
 import { AdminOrder } from "./components/pages/AdminOrder";
 import { AdminProduct } from "./components/pages/AdminProduct";
+import { UserProduct } from "./components/pages/UserProduct";
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/admin/users" element={<AdminUser />} />
             <Route path="/admin/orders" element={<AdminOrder />} />
             <Route path="/admin/products" element={<AdminProduct />} />
+            <Route path="/user/:id/products" element={<UserProduct />} />
           </Routes>
         </h1>
     </BrowserRouter>
