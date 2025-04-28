@@ -3,6 +3,7 @@ import { UserInfo } from "./components/pages/UserInfo";
 import { AdminUser } from "./components/pages/AdminUser";
 import { AdminOrder } from "./components/pages/AdminOrder";
 import { AdminProduct } from "./components/pages/AdminProduct";
+import { UserHistory } from "./components/pages/UserHistory";
 import { UserCart } from "./components/pages/UserCart";
 import { UserProduct } from "./components/pages/UserProduct";
 
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/user/:id/info" element={<UserInfo />} />
             <Route path="/user/:id/cart" element={<UserCart />} />
             <Route path="/user/:id/products" element={<UserProduct />} />
+            <Route path="/user/:id/orders" element={<UserHistory />} />
             <Route path="/admin/users" element={<AdminUser />} />
             <Route path="/admin/orders" element={<AdminOrder />} />
             <Route path="/admin/products" element={<AdminProduct />} />
