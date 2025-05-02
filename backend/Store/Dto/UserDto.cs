@@ -4,18 +4,17 @@ namespace Dto
 {
     public class UserDto
     {
-        private int id;
         private string login;
         private string password;
-        public int Id { get => id; set => id = value; }
+        private string role;
         public string Password { get => password; set => password = value; }
         public string Login { get => login; set => login = value; }
-
-        public UserDto(int id, string login, string password)
+        public string Role { get => role; set => role = value; }
+        public UserDto(string login, string password, string role)
         {
-            this.id = id;
             this.password = password;
             this.login = login;
+            this.role = role;
         }
     }
 }
