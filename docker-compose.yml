@@ -15,8 +15,8 @@ services:
 
     networks:
       - mynet
-  backend:
-    container_name: backend
+  backend1:
+    container_name: backend1
     build:
       context: ./backend/Store
       dockerfile: Dockerfile
@@ -28,6 +28,32 @@ services:
     networks:
       - mynet
 
+  backend2:
+    container_name: backend2
+    build:
+      context: ./backend/Store
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=database;Port=5432;Database=mystore;Username=postgres;Password=123456789
+    ports:
+      - "8082:8080"
+    networks:
+      - mynet
+
+  backend3:
+    container_name: backend3
+    build:
+      context: ./backend/Store
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=database;Port=5432;Database=mystore;Username=postgres;Password=123456789
+    ports:
+      - "8083:8080"
+    networks:
+      - mynet
+
   frontend:
     container_name: frontend
     build:
@@ -36,7 +62,29 @@ services:
     ports:
       - "5173:5173"
     environment:
-      - VITE_API_URL=http://localhost:8081/api/v1
+      - VITE_API_URL=http://localhost/api/v1
+    networks:
+      - mynet
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pg@admin.com
+      PGADMIN_DEFAULT_PASSWORD: aaa
+      # PGADMIN_LISTEN_PORT: 5050
+    ports:
+      - "5050:80"
+    networks:
+      - mynet
+
+  nginx:
+    image: "byjg/nginx-extras"
+    container_name: nginx_container
+    volumes:
+      - ./backend/Store/nginx/my_nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
     networks:
       - mynet
 
