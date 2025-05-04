@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Store.Models;
 using Store.BL;
+using Dto;
 
 namespace WebApplication1.Controllers
 {
@@ -52,11 +53,12 @@ namespace WebApplication1.Controllers
         [HttpPost("register")]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(User))]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
-        public IActionResult AddUser([FromBody] User user)
+        public IActionResult AddUser([FromBody] UserDto user)
         {
             try
             {
-                userService.AddUser(user);
+                User u = new User(user.Login, user.Password, user.Role);
+                userService.AddUser(u);
                 return StatusCode(StatusCodes.Status201Created, user);
             }
             catch
@@ -68,11 +70,11 @@ namespace WebApplication1.Controllers
         [HttpGet("login")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(User))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult login(string username, string password)
+        public IActionResult login(string login, string password)
         {
             try
             {
-                User user = userService.LogIn(username, password);
+                User user = userService.LogIn(login, password);
                 return Ok(user);
             }
             catch

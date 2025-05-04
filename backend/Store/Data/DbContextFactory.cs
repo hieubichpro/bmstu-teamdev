@@ -14,7 +14,7 @@ namespace Store.Data
         public DataContext CreateDbContext()
         {
             return new DataContext(new DbContextOptionsBuilder<DataContext>()
-                .UseNpgsql(_configuration.GetSection("Connection").Value)
+                .UseNpgsql(_configuration.GetConnectionString("DefaultConnection"))
                 .Options);
         }
 

@@ -40,6 +40,18 @@ builder.Services.AddTransient<ICartRepository, CartRepository>();
 builder.Services.AddTransient<CartService>();
 builder.Services.AddTransient<IItemCartRepository, ItemCartRepository>();
 builder.Services.AddTransient<ItemCartService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod() 
+                   .AllowAnyHeader(); 
+        });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -50,7 +62,7 @@ app.UseSwaggerUI();
 //}
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowAllOrigins");
 app.UseAuthorization();
 
 app.MapControllers();

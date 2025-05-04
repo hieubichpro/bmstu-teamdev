@@ -1,6 +1,6 @@
 # Устанавливаем базовый образ
 FROM node:20 AS builder
-EXPOSE 3000
+EXPOSE 5173
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
@@ -16,4 +16,4 @@ COPY . .
 # Сборка проекта
 RUN npm run build
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start", "--", "--host"]	

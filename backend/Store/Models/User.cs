@@ -39,7 +39,16 @@
             this.role = role;
             this.login = login;
         }
-
+        public User(string login, string password, string role)
+        {
+            this.login = login;
+            this.password = password;
+            this.name = "";
+            this.phone = "";
+            this.address = "";
+            this.email = "";
+            this.role = role;
+        }
         //public User(string name, string phone, string address, string email, string login, string password, string role)
         //{
         //    this.name = name;
