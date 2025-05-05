@@ -27,7 +27,7 @@
         public string Password { get => password; set => password = value; }
         public string Login { get => login; set => login = value; }
         public string Role { get => role; set => role = value; }
-
+        public User() { }
         public User(int id, string name, string phone, string address, string email, string login, string password, string role)
         {
             this.id = id;

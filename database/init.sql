@@ -1,115 +1,81 @@
--- Tạo bảng users
-CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    phone VARCHAR(100),
-    address VARCHAR(100),
-    email VARCHAR(100),
-    login VARCHAR(100),
-    password VARCHAR(100),
-    role VARCHAR(100)
+create table Users(
+	Id serial primary key,
+	Name varchar(50) not null,
+	Login varchar(50) not null,
+	Password varchar(50) not null,
+	Address varchar(50) not null,
+	Phone varchar(50) not null,
+	Email varchar(50) not null,
+	Role varchar(50) not null
 );
 
--- Tạo bảng products
-CREATE TABLE products (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    price NUMERIC,
-    quantity INT,
-    description VARCHAR(100)
+create table products (
+	Id serial primary key,
+	Name varchar(50) not null,
+	Price int not null,
+	Quantity int not null,
+	Description varchar(50) not null,
+	Image varchar(50) not null
 );
 
--- Tạo bảng carts
-CREATE TABLE carts (
-    id SERIAL PRIMARY KEY,
-    data_created TIMESTAMP,
-    id_user INT REFERENCES users(id)
+create table carts(
+	Id serial primary key,
+	data_created date not null,
+	id_user int references Users(Id) ON DELETE CASCADE
 );
 
--- Tạo bảng itemcarts
-CREATE TABLE itemcarts (
-    id SERIAL PRIMARY KEY,
-    id_product INT REFERENCES products(id),
-    id_cart INT REFERENCES carts(id),
-    quantity INT
+create table itemcarts(
+	Id serial primary key,
+	id_product int not null,
+	id_cart int not null,
+	quantity int not null,
+	foreign key (id_cart) references Carts(Id) ON DELETE CASCADE,
+	foreign key (id_product) references Products(Id) ON DELETE CASCADE
 );
 
--- Tạo bảng orders
-CREATE TABLE orders (
-    id SERIAL PRIMARY KEY,
-    status VARCHAR(255),
-    data_created TIMESTAMP,
-    id_user INT REFERENCES users(id)
+create table orders(
+	Id serial primary key,
+	status varchar(20) not null,
+	data_created date not null,
+	id_user int not null,
+	foreign key (id_user) references users(Id) ON DELETE CASCADE
 );
 
--- Tạo bảng itemorders
-CREATE TABLE itemorders (
-    id SERIAL PRIMARY KEY,
-    id_product INT REFERENCES products(id),
-    id_order INT REFERENCES orders(id),
-    quantity INT
+create table itemorders(
+	Id serial primary key,
+	id_product int not null,
+	id_order int not null,
+	quantity int not null,
+	foreign key (id_order) references Orders(Id) ON DELETE CASCADE,
+	foreign key (id_product) references Products(Id) ON DELETE CASCADE
 );
 
--- Chèn dữ liệu vào bảng users
-INSERT INTO users (name, phone, address, email, login, password, role) VALUES
-('John Doe', '1234567890', '123 Elm St', 'john@example.com', 'john_doe', 'password123', 'User'),
-('Jane Smith', '0987654321', '456 Oak Ave', 'jane@example.com', 'jane_smith', 'pass456', 'Admin'),
-('Alice Johnson', '1112223333', '789 Pine Rd', 'alice@example.com', 'alice_j', 'alicepwd', 'User'),
-('Bob Brown', '4445556666', '321 Maple Dr', 'bob@example.com', 'bobb', 'bobb123', 'User'),
-('Charlie Davis', '7778889999', '654 Birch Blvd', 'charlie@example.com', 'charlied', 'charliepwd', 'User'),
-('Diana Evans', '5556667777', '987 Cedar Ct', 'diana@example.com', 'dianae', 'dianapass', 'Admin'),
-('Evan Flores', '2223334444', '246 Walnut Way', 'evan@example.com', 'evanf', 'evanpass', 'User'),
-('Fiona Garcia', '8889990000', '135 Hickory Ln', 'fiona@example.com', 'fionag', 'fiona123', 'User'),
-('George Harris', '9990001111', '864 Spruce Cir', 'george@example.com', 'georgeh', 'georgepwd', 'User'),
-('Hannah Irving', '6667778888', '753 Willow St', 'hannah@example.com', 'hannahi', 'hannahpass', 'User');
+COPY users(name, login, password, address, phone, email, role)
+FROM '/docker-entrypoint-initdb.d/UserTable.csv'
+DELIMITER ','
+CSV HEADER;
 
--- Chèn dữ liệu vào bảng products
-INSERT INTO products (name, price, quantity, description) VALUES
-('Laptop ASUS X515', 750.00, 10, '15.6 inch, Intel i5, 8GB RAM'),
-('iPhone 13', 999.99, 15, 'Apple smartphone with A15 chip'),
-('Samsung Galaxy S22', 899.99, 20, 'Latest Samsung flagship'),
-('Headphones Sony WH-1000XM4', 349.99, 25, 'Noise-canceling over-ear headphones'),
-('Keyboard Logitech K380', 39.99, 50, 'Wireless multi-device keyboard'),
-('Monitor LG 27UL500', 279.99, 12, '27 inch 4K UHD display'),
-('USB-C Hub', 25.99, 40, '6-in-1 USB-C hub with HDMI'),
-('External HDD 1TB', 59.99, 30, 'Portable USB 3.0 hard drive'),
-('Mouse Logitech M185', 14.99, 60, 'Wireless optical mouse'),
-('Smartwatch Amazfit Bip U', 69.99, 18, 'Fitness tracker with SpO2 sensor');
+COPY products(name, price, quantity, description, image)
+FROM '/docker-entrypoint-initdb.d/ProductTable.csv'
+DELIMITER ','
+CSV HEADER;
 
--- Chèn dữ liệu vào bảng carts
-INSERT INTO carts (data_created, id_user) VALUES
-(NOW(), 1),
-(NOW(), 2),
-(NOW(), 3),
-(NOW(), 4),
-(NOW(), 5);
+COPY carts(data_created, id_user)
+FROM '/docker-entrypoint-initdb.d/CartTable.csv'
+DELIMITER ','
+CSV HEADER;
 
--- Chèn dữ liệu vào bảng itemcarts
-INSERT INTO itemcarts (id_product, id_cart, quantity) VALUES
-(1, 1, 1),
-(2, 1, 2),
-(3, 2, 1),
-(5, 2, 1),
-(4, 3, 2),
-(6, 4, 1),
-(8, 5, 3),
-(10, 5, 1);
+COPY orders(status, data_created, id_user)
+FROM '/docker-entrypoint-initdb.d/OrderTable.csv'
+DELIMITER ','
+CSV HEADER;
 
--- Chèn dữ liệu vào bảng orders
-INSERT INTO orders (status, data_created, id_user) VALUES
-('Pending', NOW(), 1),
-('Shipped', NOW(), 2),
-('Delivered', NOW(), 3),
-('Cancelled', NOW(), 4),
-('Pending', NOW(), 5);
+COPY itemcarts(id_product, id_cart, quantity)
+FROM '/docker-entrypoint-initdb.d/ItemCartTable.csv'
+DELIMITER ','
+CSV HEADER;
 
--- Chèn dữ liệu vào bảng itemorders
-INSERT INTO itemorders (id_product, id_order, quantity) VALUES
-(1, 1, 1),
-(2, 1, 1),
-(3, 2, 1),
-(4, 2, 2),
-(5, 3, 1),
-(6, 3, 1),
-(7, 4, 2),
-(8, 5, 1);
+COPY itemorders(id_product, id_order, quantity)
+FROM '/docker-entrypoint-initdb.d/ItemOrderTable.csv'
+DELIMITER ','
+CSV HEADER;
