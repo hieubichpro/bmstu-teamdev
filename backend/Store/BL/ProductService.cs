@@ -24,7 +24,7 @@ namespace Store.BL
             {
                 throw new Exception("Уже существует это продукт!");
             }
-            else
+            else 
                 _productRepository.AddProduct(product);
         }
 
@@ -35,7 +35,7 @@ namespace Store.BL
             else
                 throw new Exception("Пользователь не существует");
         }
-        public void UpdateProduct(int id, Product _product)
+        public void UpdateProduct(int id, Product _product) 
         {
             Product product = _productRepository.GetProduct(id);
             if (product == null)
@@ -54,9 +54,9 @@ namespace Store.BL
         {
             return _productRepository.GetAllProducts();
         }
-        public ICollection<Product> GetProductByName(string name)
+        public ICollection<Product> GetProductByName(string startWith)
         {
-            return _productRepository.GetProduct(name);
+            return _productRepository.GetProduct(startWith);
         }
     }
 }

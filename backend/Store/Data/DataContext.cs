@@ -80,6 +80,10 @@ namespace Store.Data
                         .HasMaxLength(100)
                         .IsUnicode(false)
                         .HasColumnName("description");
+                entity.Property(u => u.Img)
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnName("image");
             });
 
             modelBuilder.Entity<Order>(entity =>

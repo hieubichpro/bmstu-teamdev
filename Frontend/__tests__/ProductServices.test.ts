@@ -65,6 +65,69 @@ describe('ProductServices', () => {
         });
     });
 
+    describe('create', () => {
+        it('should create new product', async () => {
+            const newProduct = {
+                name: 'New Product',
+                price: 150,
+                description: 'New Description',
+                quantity: 1,
+                img: 'new-image.jpg'
+            };
+            const createdProduct = { ...newProduct, id: 4 };
+            
+            mockedAPI.post.mockResolvedValueOnce({ data: createdProduct });
+
+            const result = await ProductServices.create(newProduct);
+
+            expect(result.data).toEqual(createdProduct);
+            expect(mockedAPI.post).toHaveBeenCalledWith('/products', newProduct, {
+                headers: { Authorization: 'Bearer undefined' }
+            });
+        });
+    });
+
+    describe('update', () => {
+        it('should update product', async () => {
+            const updateData = {
+                id: 1,
+                name: 'Updated Product',
+                price: 180,
+                description: 'Description 1',
+                quantity: 1,
+                img: 'image1.jpg'
+            };
+            const updatedProduct = { ...MOCK_PRODUCTS[0], ...updateData };
+            
+            mockedAPI.put.mockResolvedValueOnce({ data: updatedProduct });
+
+            const result = await ProductServices.update('1', updateData);
+
+            expect(result.data).toEqual(updatedProduct);
+            expect(mockedAPI.put).toHaveBeenCalledWith('/products/1', updateData, {
+                headers: { Authorization: 'Bearer undefined' }
+            });
+        });
+    });
+
+    describe('delete', () => {
+        it('should delete product', async () => {
+            mockedAPI.delete.mockResolvedValueOnce({ data: {} });
+
+            await ProductServices.delete('1');
+
+            expect(mockedAPI.delete).toHaveBeenCalledWith('/products/1', {
+                headers: { Authorization: 'Bearer undefined' }
+            });
+        });
+
+        it('should handle delete error', async () => {
+            const error = new Error('Delete failed');
+            mockedAPI.delete.mockRejectedValueOnce(error);
+
+            await expect(ProductServices.delete('1')).rejects.toThrow('Delete failed');
+        });
+    });
 
     // describe('error handling', () => {
     //     it('should handle network errors', async () => {

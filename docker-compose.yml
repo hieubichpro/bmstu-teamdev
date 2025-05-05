@@ -3,10 +3,11 @@ services:
     container_name: database
     image: postgres
     restart: always
+    env_file: .env
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123456789
-      POSTGRES_DB: mystore
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB_NAME}
     ports:
       - "5431:5432"
     volumes:
@@ -19,9 +20,10 @@ services:
     build:
       context: ./backend/Store
       dockerfile: Dockerfile
+    env_file: .env
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=database;Port=5432;Database=mystore;Username=postgres;Password=123456789
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ConnectionStrings__DefaultConnection=${DEFAULT_CONNECTION}
     ports:
       - "8081:8080"
     networks:
@@ -32,9 +34,10 @@ services:
     build:
       context: ./backend/Store
       dockerfile: Dockerfile
+    env_file: .env
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=database;Port=5432;Database=mystore;Username=postgres;Password=123456789
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ConnectionStrings__DefaultConnection=${DEFAULT_CONNECTION}
     ports:
       - "8082:8080"
     networks:
@@ -45,9 +48,10 @@ services:
     build:
       context: ./backend/Store
       dockerfile: Dockerfile
+    env_file: .env
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=database;Port=5432;Database=mystore;Username=postgres;Password=123456789
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ConnectionStrings__DefaultConnection=${DEFAULT_CONNECTION}
     ports:
       - "8083:8080"
     networks:
@@ -60,18 +64,16 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5173:5173"
-    environment:
-      - VITE_API_URL=http://localhost/api/v1
     networks:
       - mynet
 
   pgadmin:
     image: dpage/pgadmin4
     restart: always
+    env_file: .env
     environment:
-      PGADMIN_DEFAULT_EMAIL: pg@admin.com
-      PGADMIN_DEFAULT_PASSWORD: aaa
-      # PGADMIN_LISTEN_PORT: 5050
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
     ports:
       - "5050:80"
     networks:

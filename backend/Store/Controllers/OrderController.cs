@@ -32,15 +32,15 @@ namespace WebApplication1.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult getAllOrders([FromQuery] int id_user)
         {
-            List<OrderDto> orders;
+            List<Order> orders;
 
             if (id_user > 0) 
             {
-                orders = _mapper.Map<List<OrderDto>>(orderService.GetOrdersByIdUser(id_user));
+                orders = _mapper.Map<List<Order>>(orderService.GetOrdersByIdUser(id_user));
             }
             else
             {
-                orders = _mapper.Map<List<OrderDto>>(orderService.GetAllOrders()); 
+                orders = _mapper.Map<List<Order>>(orderService.GetAllOrders()); 
             }
 
             if (!ModelState.IsValid) 

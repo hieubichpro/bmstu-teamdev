@@ -26,20 +26,19 @@ namespace WebApplication1.Controllers
         [HttpGet()]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ICollection<Product>))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult getAllProducts([FromQuery] string? name)
+        public IActionResult getAllProducts([FromQuery] string? startWith)
         {
             ICollection<Product> products;
-            if (name == null)
+            if (startWith == null)
             {
                 products = productService.GetAllProducts();
             }
             else
             {
-                products = productService.GetProductByName(name);
+                products = productService.GetProductByName(startWith);
             }
             return Ok(products);
         }
-
         /// <summary>
         /// Adds a new product to the system
         /// </summary>
@@ -79,9 +78,8 @@ namespace WebApplication1.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Product))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult getProduct(int id)
+        public  IActionResult getProduct(int id)
         {
             Product product = productService.GetProductById(id);
             if (product == null)
@@ -90,7 +88,6 @@ namespace WebApplication1.Controllers
                 return BadRequest(ModelState);
             return Ok(product);
         }
-
         /// <summary>
         /// Updates an existing product
         /// </summary>
@@ -101,6 +98,7 @@ namespace WebApplication1.Controllers
         /// </returns>
         /// <response code="200">Product successfully updated</response>
         /// <response code="404">If product is not found</response>
+
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -116,7 +114,6 @@ namespace WebApplication1.Controllers
                 return NotFound();
             }
         }
-
         /// <summary>
         /// Deletes a product from the system
         /// </summary>

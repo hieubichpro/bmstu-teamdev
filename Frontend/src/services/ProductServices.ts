@@ -13,14 +13,14 @@ export class ProductServices {
     }
 
     public static async create(product: ProductDto): Promise<AxiosResponse<ProductDto>> {
-        return API.post('/products', product);
+        return API.post('/products', product, {headers: {Authorization: getJwtToken()}});
     }
 
     public static async update(id: string, product: Product): Promise<AxiosResponse<Product>> {
-        return API.put(`/products/${id}`, product);
+        return API.put(`/products/${id}`, product, {headers: {Authorization: getJwtToken()}});
     }
 
     public static async delete(id: string) {
-        return API.delete(`/products/${id}`);
+        return API.delete(`/products/${id}`, {headers: {Authorization: getJwtToken()}});
     }
 }

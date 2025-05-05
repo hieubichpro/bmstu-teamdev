@@ -25,18 +25,21 @@ namespace Repository
             return _context.products.Where(p => p.Id == id).FirstOrDefault();
         }
 
-        public ICollection<Product> GetProduct(string name)
+        public ICollection<Product> GetProduct(string startWith)
         {
-            return _context.products.Where(p => p.Name == name).ToList();
+            return _context.products.Where(p => p.Name.StartsWith(startWith)).ToList();
         }
 
         public void AddProduct(Product product)
         {
             List<Product>? lst = _context.products.Count() > 0 ? _context.products.ToList() : null;
             int maxid = 0;
-            foreach (Product temp in lst)
-                if (temp.Id > maxid)
-                    maxid = temp.Id;
+            if (lst != null)
+            {
+                foreach (Product temp in lst)
+                    if (temp.Id > maxid)
+                        maxid = temp.Id;
+            }
             product.Id = maxid + 1;
             _context.products.Add(product);
             _context.SaveChanges();
@@ -62,6 +65,7 @@ namespace Repository
                 productToUpdate.Price = product.Price;
                 productToUpdate.Quantity = product.Quantity;
                 productToUpdate.Description = product.Description;
+                productToUpdate.Img = product.Img;
                 _context.SaveChanges();
             }
         }

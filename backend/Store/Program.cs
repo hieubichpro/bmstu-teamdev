@@ -27,7 +27,8 @@ builder.Services.AddSwaggerGen(c=>
 
         }
     });
-    var xmlPath = Path.Combine(Directory.GetCurrentDirectory(), "bin", "Debug", "net8.0", "Store.xml");
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, "Store.xml");
+
     c.IncludeXmlComments(xmlPath);
 });
 builder.Services.AddControllers().AddJsonOptions(x =>
