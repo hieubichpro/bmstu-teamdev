@@ -11,7 +11,6 @@ services:
       - "5431:5432"
     volumes:
       - ./database:/docker-entrypoint-initdb.d
-      
 
     networks:
       - mynet
@@ -90,7 +89,6 @@ services:
 
 volumes:
   postgres-data:
-# nginx_log:
 networks:
   mynet:
     driver: bridge
