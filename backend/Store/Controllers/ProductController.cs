@@ -13,6 +13,16 @@ namespace WebApplication1.Controllers
         {
             this.productService = productService;
         }
+
+        /// <summary>
+        /// Retrieves all products or filters by name
+        /// </summary>
+        /// <param name="name">Optional product name filter (case-sensitive)</param>
+        /// <returns>
+        /// List of products matching criteria
+        /// </returns>
+        /// <response code="200">Returns the product list</response>
+        /// <response code="500">If there was a server error</response>
         [HttpGet()]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ICollection<Product>))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -30,6 +40,15 @@ namespace WebApplication1.Controllers
             return Ok(products);
         }
 
+        /// <summary>
+        /// Adds a new product to the system
+        /// </summary>
+        /// <param name="product">Product data to create</param>
+        /// <returns>
+        /// The newly created product
+        /// </returns>
+        /// <response code="201">Product successfully created</response>
+        /// <response code="409">If product already exists or data conflict occurs</response>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Product))]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
@@ -45,11 +64,24 @@ namespace WebApplication1.Controllers
                 return StatusCode(StatusCodes.Status409Conflict);
             }
         }
+
+        /// <summary>
+        /// Retrieves a specific product by ID
+        /// </summary>
+        /// <param name="id">The product ID</param>
+        /// <returns>
+        /// The requested product details
+        /// </returns>
+        /// <response code="200">Returns the product details</response>
+        /// <response code="404">If product is not found</response>
+        /// <response code="400">If the request is invalid</response>
+        /// <response code="500">If there was a server error</response>
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Product))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public  IActionResult getProduct(int id)
+        public IActionResult getProduct(int id)
         {
             Product product = productService.GetProductById(id);
             if (product == null)
@@ -58,8 +90,17 @@ namespace WebApplication1.Controllers
                 return BadRequest(ModelState);
             return Ok(product);
         }
-        
 
+        /// <summary>
+        /// Updates an existing product
+        /// </summary>
+        /// <param name="id">ID of the product to update</param>
+        /// <param name="product">Updated product data</param>
+        /// <returns>
+        /// Empty response on success
+        /// </returns>
+        /// <response code="200">Product successfully updated</response>
+        /// <response code="404">If product is not found</response>
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -76,6 +117,15 @@ namespace WebApplication1.Controllers
             }
         }
 
+        /// <summary>
+        /// Deletes a product from the system
+        /// </summary>
+        /// <param name="id">ID of the product to delete</param>
+        /// <returns>
+        /// Empty response on success
+        /// </returns>
+        /// <response code="200">Product successfully deleted</response>
+        /// <response code="404">If product is not found</response>
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

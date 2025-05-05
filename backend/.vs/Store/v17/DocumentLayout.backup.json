@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\",
+  "WorkspaceRootPath": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\bl\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\bl\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -40,13 +41,29 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> feature/21-doc-api
       "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\controllers\\itemcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\controllers\\itemcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\controllers\\itemordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\controllers\\itemordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\data\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\data\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -93,6 +110,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|c:\\users\\abcd2\\onedrive\\desktop\\8-sem-hieu\\bmstu-teamdev\\backend\\store\\models\\itemcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\models\\itemcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|e:\\my_semester_8\\teamdev\\bmstu-teamdev\\backend\\store\\store.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AA08BBAF-C08C-41AD-B651-BA09EA5F91A9}|Store\\Store.csproj|solutionrelative:store\\store.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+>>>>>>> feature/21-doc-api
     }
   ],
   "DocumentGroupContainers": [
@@ -102,11 +131,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\BL\\UserService.cs",
               "RelativeDocumentMoniker": "Store\\BL\\UserService.cs",
@@ -115,10 +169,21 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T14:05:34.642Z",
+=======
+              "Title": "CartController.cs",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Store\\Controllers\\CartController.cs",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Store\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAJYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:35:24.492Z",
+>>>>>>> feature/21-doc-api
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 9,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\8-SEM-HIEU\\bmstu-teamdev\\backend\\Store\\Controllers\\CartController.cs",
@@ -383,6 +448,95 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T12:44:51.56Z"
+=======
+              "DocumentIndex": 1,
+              "Title": "ItemCartController.cs",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\ItemCartController.cs",
+              "RelativeDocumentMoniker": "Store\\Controllers\\ItemCartController.cs",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\ItemCartController.cs",
+              "RelativeToolTip": "Store\\Controllers\\ItemCartController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAKMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:33:35.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemOrderController.cs",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\ItemOrderController.cs",
+              "RelativeDocumentMoniker": "Store\\Controllers\\ItemOrderController.cs",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\ItemOrderController.cs",
+              "RelativeToolTip": "Store\\Controllers\\ItemOrderController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAJYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:30:12.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Store\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Store\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAJAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:08:19.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Store\\Controllers\\OrderController.cs",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Store\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAwIYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:08:18.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Store",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Store.csproj",
+              "RelativeDocumentMoniker": "Store\\Store.csproj",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Store.csproj",
+              "RelativeToolTip": "Store\\Store.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-02T11:53:42.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Store\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Store\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAM4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:43:00.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Program.cs",
+              "RelativeDocumentMoniker": "Store\\Program.cs",
+              "ToolTip": "E:\\My_semester_8\\TeamDev\\bmstu-teamdev\\backend\\Store\\Program.cs",
+              "RelativeToolTip": "Store\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:41:28.928Z",
+              "EditorCaption": ""
+>>>>>>> feature/21-doc-api
             }
           ]
         }
