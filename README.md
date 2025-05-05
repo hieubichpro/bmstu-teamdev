@@ -1,1 +1,1 @@
-# bmstu-teamdev
+# bmstu-teamdev 2025
