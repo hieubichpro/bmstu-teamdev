@@ -1,0 +1,70 @@
+7709863508:AAE50iVV2ZU4uzH1nK4HGLvHZJSUIhJT6Gg
+1972160878
+Скопировать коммит из одной ветки в другую
+В каких случаях операцию копирования выполнить не получиться
+
+git checkout des_branch
+git cherry-pick hash_commit
+
+conflict when merge file
+current or incoming
+git add . ( + git commit ???)
+git cherry-pick --continue | abort
+
+
+Дано 5 камитов в одной ветке
+Откатить последний коммит
+
+git reset --soft HEAD~1 (include git add .)
+git reset --mixed HEAD~1 (without git add .)
+git reset --hard HEAD~1 (delete all)
+
+Убрать изменение кода, которое оказывает камит  HEAD-3 ( сделать это  двумя способами)
+
+1. git revert HEAD~3
+(conflict = git add . + git revert --continue ( + git commit -m "")
+
+2. git rebase -i HEAD~4
+add drop
+
+Чем merge отличается от rebase (нарисовать)
+
+
+Научиться Склеивать  коммиты
+git rebase -i HEAD~4
+squash
+
+Продемонстрировать знания git bisect на своем репозитории
+git bisect start
+git bisect bad
+git bisect good HEAD~10
+
+[git bisect [good][bad]]
+
+git bisect reset
+
+Установить Git flow уметь работать и понимать смысл 
+feature
+hotfix 
+release
+
+
+main -> develop (feature1, feature2)
+develop -> release
+release -> main + develop
+
+main -> hotfix
+hotfix -> main + develop
+
+git flow init
+git flow feature [start/finish] login
+
+git flow release [start/finish] v1.0
+
+git flow hotfix [start/finish] -m messgae fig_bug_123
+
+
+DVC
+Установить
+Прочитать доку
+Объяснить и показать,  зачем это  нужно
